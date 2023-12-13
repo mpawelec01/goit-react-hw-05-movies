@@ -1,0 +1,18 @@
+.movieInfo {
+  display: flex;
+  padding-top: 15px;
+}
+
+.poster {
+  max-width: 250px;
+  box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.3);
+}
+
+.movieDetails {
+  padding-left: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+span {
+  padding-right: 10px;
+}
