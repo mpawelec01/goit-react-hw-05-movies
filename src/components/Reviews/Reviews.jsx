@@ -17,6 +17,7 @@ const Reviews = () => {
 
   useEffect(() => {
     fetchMovieReviews();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [movieId]);
 
   return (

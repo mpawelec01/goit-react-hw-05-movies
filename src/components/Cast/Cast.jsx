@@ -18,6 +18,7 @@ const Cast = () => {
 
   useEffect(() => {
     fetchMovieCredits();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [movieId]);
   return (
     <div>

@@ -24,6 +24,7 @@ const Movies = () => {
 
   useEffect(() => {
     fetchMovies(queryFilter);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [queryFilter]);
 
   return (
