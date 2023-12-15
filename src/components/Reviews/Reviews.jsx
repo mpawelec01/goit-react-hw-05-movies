@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { getMovieReviews } from 'Api/Api';
+import { getMovieReviews } from 'Api/api';
 
 const Reviews = () => {
   const [movieReviews, setMovieReviews] = useState([]);

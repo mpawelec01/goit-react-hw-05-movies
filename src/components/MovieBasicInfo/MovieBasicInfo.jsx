@@ -2,7 +2,11 @@ import css from './MovieBasicInfo.module.css';
 import { Link, useLocation } from 'react-router-dom';
 
 export const MovieBasicInfo = ({ data, genres }) => {
-  const countScore = Math.floor(data.vote_average * 10);
+  const countScore =
+    data.vote_average !== 0
+      ? Math.floor(data.vote_average * 10) + '%'
+      : 'Not Rated';
+
   const location = useLocation();
   const backLink = location.state?.from ?? '/';
 
@@ -17,7 +21,7 @@ export const MovieBasicInfo = ({ data, genres }) => {
         />
         <div className={css.movieDetails}>
           <h2>{data.title}</h2>
-          <p>User Score: {countScore}%</p>
+          <p>User Score: {countScore}</p>
           <h3>Overview</h3>
           <p>{data.overview}</p>
           <h4>Genres</h4>
